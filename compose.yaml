@@ -1,0 +1,10 @@
+---
+version: '3'
+
+services:
+  cheatsheets:
+    build: .
+    image: furyhawk/cheatsheets
+    restart: unless-stopped
+    ports:
+      - 80:80
